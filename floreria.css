@@ -1,0 +1,45 @@
+body {
+    background-color: #fdedf3;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logoImg{
+    width: 20%;
+}
+
+button {
+    background-color: #ff80ab; 
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+#mensaje {
+    font-size: 18px;
+    padding: 15px 20px;
+    background-color: #fff0f5;
+    color: #880e4f;
+    border-radius: 10px;
+    border: 1px solid #f8bbd0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
