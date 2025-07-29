@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--Simulador de compras de flores en una floreria
-1ra entrega:
-Solicitar cotizacion de flores en base al catalogo disponible eligiendo especie y cantidad
-Mostrar mensaje en la pagina de lo que seleccionó
-Si hay sugerencias para mejorar el diseño y/o interaccion más que bienvenido!
+Permitir agregar productos al carrito
 -->
 <html lang="en">
     <head>
@@ -11,15 +8,23 @@ Si hay sugerencias para mejorar el diseño y/o interaccion más que bienvenido!
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunflower Deco</title>
     <link rel="stylesheet" href="floreria.css" />
-    <script defer src="floreria.js"></script>
+    <script defer src="js/catalogo.js"></script>
+    <script defer src="js/floreria.js"></script>
     </head>
     <body>
-        <div class="logo">
-            <img class="logoImg" src="images/logo.png">
-        </div>
-
-        <button onclick="consultarStock()">Consultar stock</button>
-
-        <p id="mensaje">¡Elegí tu regalo especial!</p>
+        <main class="mt-5 container">
+            <div class="logo">
+                <img class="logoImg" src="images/logo.png">
+            </div>
+            <h1>Catálogo de flores</h1>
+            <div id="catalogo" class="catalogo-container"></div>
+            <button id="toggle-carrito">🛒 <span id="cantidad">0</span></button>
+            <section id="carrito" class="carrito-container">
+                <h2>Carrito de compras</h2>
+                <div id="items-carrito"></div>
+                <p id="total-carrito">Total: $0</p>
+            </section>
+            <section class="mt-4 d-flex" id="seccion-flores"></section>
+        </main>
     </body>
 </html>
