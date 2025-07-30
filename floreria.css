@@ -51,7 +51,6 @@ h1 {
 .catalogo-container,
 #seccion-flores {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
@@ -101,13 +100,13 @@ h1 {
     background-color: #e8f5e9;
 }
 
-#items-carrito > div {
+#items > div {
     padding: 8px 0;
     display: flex;
     justify-content: space-between;
 }
 
-#total-carrito {
+#total {
     font-weight: bold;
     margin-top: 10px;
     text-align: right;
@@ -142,7 +141,7 @@ h1 {
   z-index: 1001;
 }
 
-.btn-eliminar-carrito {
+.button-eliminar-carrito {
     background: none;
     border: none;
     padding: 0;
