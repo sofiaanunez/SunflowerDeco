@@ -1,3 +1,3 @@
 # SunflowerDeco
 
-Proyecto SunFlower - Primer entrega, proximamente mas info
+Proyecto SunFlower - Primer entrega y segunda entrega, proximamente mas info
