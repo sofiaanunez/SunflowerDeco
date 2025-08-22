@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--Simulador de completar carrito de compras en una floreria ficticia
+Se puede agregar productos al carrito, eliminar y se agrupan por producto
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunflower Deco</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <main class="mt-5 container">
+    <div class="logo">
+      <img class="logoImg" src="images/logo.png" alt="Logo" />
+    </div>
+    <h1>Catálogo de flores</h1>
+    <button id="toggle-carrito">🛒 <span id="cantidad">0</span></button>
+
+    <section id="carrito" class="carrito-container">
+      <h2>Carrito de compras</h2>
+      <div id="items"></div>
+      <p id="total">Precio total: $0</p>
+      <button id="finalizar-compra">Finalizar compra</button>
+    </section>
+
+    <section class="mt-4 d-flex" id="seccion-flores"></section>
+  </main>
+</body>
+</html>
